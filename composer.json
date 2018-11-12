@@ -1,0 +1,11 @@
+{
+    "name": "root/swoole_game",
+    "description": "swoole_game 为游戏而生 高性能游戏服务器",
+    "authors": [
+        {
+            "name": "yuexiangrui",
+            "email": "yuexiangrui@chelun.com"
+        }
+    ],
+    "require": {}
+}
