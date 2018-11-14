@@ -1,8 +1,7 @@
-#!/usr/bin/env php
 <?php
 namespace  swoole;
 
-class swoole_new_server {
+class swoole_game {
 
     public  $iport = 9505;
     public  $ip = '0.0.0.0';
@@ -53,6 +52,9 @@ class swoole_new_server {
     }
 
     public function run(){
+        if(empty($this->pid)){
+            $this->pid = __DIR__.'/server.pid';
+        }
         global $argv;
         if (empty($argv[1]) or isset($opt['help']))
         {
@@ -126,7 +128,7 @@ class swoole_new_server {
 
     public function setPid($dir){
         if(!$dir){
-            echo '请设置PID';
+            echo '请设置PID存放位置';
         }
         $this->pid = $dir;
     }
@@ -213,16 +215,3 @@ class swoole_new_server {
     }
 
 }
-
-$pid = __DIR__.'/server.pid';//寻找进程id
-
-$swoole = new \swoole\swoole_new_server();
-
-$data = [
-    'class'=>'swoole\controllers\test',
-    'fun'=>'test'
-];
-
-$swoole->setPid($pid);
-
-$swoole->run();

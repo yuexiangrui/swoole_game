@@ -4,8 +4,15 @@
     "authors": [
         {
             "name": "yuexiangrui",
-            "email": "yuexiangrui@chelun.com"
+            "email": "136784584@qq.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Swoole\\Swoole_game\\": "swoole_game/src/"
+        }
+    }
+
+
 }
