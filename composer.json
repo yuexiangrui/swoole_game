@@ -10,7 +10,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Swoole\\Swoole_game\\": "swoole_game/src/"
+            "Swoole\\Swoole_game\\": "src/"
         }
     }
 
