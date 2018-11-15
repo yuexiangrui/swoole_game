@@ -1,7 +1,7 @@
 <?php
-namespace  swoole;
+namespace  Swoole;
 
-class swoole_game {
+class Swoole_game {
 
     public  $iport = 9505;
     public  $ip = '0.0.0.0';
